@@ -18,25 +18,25 @@ This repository guides on how to use redux in a simple hello world application.
 
 **Redux is a stand-alone library thus we only install redux**:
 
-    ```
-    npm install --save redux
-    ```
+```
+npm install --save redux
+```
     
 
 ### Create a js file
 
 
-    ```
-    touch ReduxHelloWorld.js
-    ```
+```
+touch ReduxHelloWorld.js
+```
     
 
 ### Import Redux
 
 
-    ```js
-    const redux = require('redux');
-    ```
+```js
+const redux = require('redux');
+```
     
 
 ### Create a basic Reducer
@@ -44,20 +44,20 @@ This repository guides on how to use redux in a simple hello world application.
 It is a pure function that takes the current state and action and returns a new state. A valid reducer can return the current state. 
 
 
-    ```js
-    const rootReducer = (currentState = 0, action) => {
-        return currentState;
-    }
-    ```
+```js
+const rootReducer = (currentState = 0, action) => {
+    return currentState;
+}
+```
 
 
 ### Create a store
 
 **start store using the rootreducer**
 
-    ```js
-    const store = redux.createStore(rootReducer);
-    ```
+```js
+const store = redux.createStore(rootReducer);
+```
     
 ### Add reducer actions
 
