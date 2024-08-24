@@ -40,3 +40,13 @@ It is a pure function that takes the current state and action and returns a new 
 
 **start store using the rootreducer**
     const store = redux.createStore(rootReducer);
+
+1. **Clone the repository:**
+   
+   git clone https://github.com/BabaMboga/TYC-main.git
+
+2. **Navigate to the project directory:**
+
+    cd TYC-main
+
+3. **Install the dependencies:**
