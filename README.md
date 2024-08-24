@@ -30,7 +30,7 @@ This repository guides on how to use redux in a simple hello world application.
 
 ### Import Redux
 
-**Ensure redux is imported in the top level**:
+
     ```js
     const redux = require('redux');
     ```
@@ -40,9 +40,9 @@ This repository guides on how to use redux in a simple hello world application.
 
 It is a pure function that takes the current state and action and returns a new state. A valid reducer can return the current state. 
 
-**We have to create it before the store because it is needed for creating the store.**
+
     ```js
-        const rootReducer = (currentState = 0, action) => {
+    const rootReducer = (currentState = 0, action) => {
         return currentState;
     }
     ```
@@ -51,6 +51,7 @@ It is a pure function that takes the current state and action and returns a new 
 ### create a store
 
 **start store using the rootreducer**
+
     ```js
     const store = redux.createStore(rootReducer);
     ```
